@@ -1,0 +1,1 @@
+browserify client.jsx -t babelify --outfile client.js

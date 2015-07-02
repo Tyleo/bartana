@@ -1,0 +1,32 @@
+﻿[
+    {
+        "pin": {
+            "bank": "0",
+            "column": "0",
+            "row": "6"
+        },
+        "mixer": "Coke",
+        "flowRate": 4,
+        "isActive": true
+    },
+    {
+        "pin": {
+            "bank": "0",
+            "column": "0",
+            "row": "7"
+        },
+        "mixer": "Rum",
+        "flowRate":  4,
+        "isActive":  true
+    },
+    {
+        "pin": {
+            "bank": "0",
+            "column": "0",
+            "row": "8"
+        },
+        "mixer": "Water",
+        "flowRate": 4,
+        "isActive": true
+    }
+]

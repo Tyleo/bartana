@@ -1,0 +1,30 @@
+﻿[
+    {
+        "name": "Coke",
+        "percentAlcohol": 0,
+        "color": "#2C0A08",
+        "isCarbonated": true,
+        "isActive": true
+    },
+    {
+        "name": "Orange Juice",
+        "percentAlcohol": 0,
+        "color": "#F4A002",
+        "isCarbonated": false,
+        "isActive": true
+    },
+    {
+        "name": "Water",
+        "percentAlcohol": 0,
+        "color": "#00FFFF",
+        "isCarbonated": false,
+        "isActive": true
+    },
+    {
+        "name": "Rum",
+        "percentAlcohol": 20,
+        "color": "#BD4C00",
+        "isCarbonated": false,
+        "isActive": true
+    }
+]

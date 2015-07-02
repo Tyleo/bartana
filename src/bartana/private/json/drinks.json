@@ -1,0 +1,36 @@
+﻿[
+    {
+        "name": "Rum n' Coke",
+        "components": [
+            {
+                "mixer": "Coke",
+                "parts": 4
+            },
+            {
+                "mixer": "Rum",
+                "parts": 1
+            }
+        ],
+        "isActive": true
+    },
+    {
+        "name": "Orange Juice",
+        "components": [
+            {
+                "mixer": "Orange Juice",
+                "parts": 1
+            }
+        ],
+        "isActive":  true
+    },
+    {
+        "name": "Water",
+        "components": [
+            {
+                "mixer": "Water",
+                "parts": 1
+            }
+        ],
+        "isActive": true
+    }
+]
