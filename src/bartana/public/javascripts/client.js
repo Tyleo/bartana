@@ -27017,7 +27017,11 @@ internals.parseValues = function (str, options) {
             var key = Utils.decode(part.slice(0, pos));
             var val = Utils.decode(part.slice(pos + 1));
 
-            if (!Object.prototype.hasOwnProperty.call(obj, key)) {
+            if (Object.prototype.hasOwnProperty(key)) {
+                continue;
+            }
+
+            if (!obj.hasOwnProperty(key)) {
                 obj[key] = val;
             }
             else {
@@ -50912,6 +50916,8 @@ var LeftNav = Mui.LeftNav;
 var MenuItem = Mui.MenuItem;
 
 var BartanaLeftNav = (function (_React$Component) {
+    _inherits(BartanaLeftNav, _React$Component);
+
     function BartanaLeftNav() {
         _classCallCheck(this, BartanaLeftNav);
 
@@ -50928,8 +50934,6 @@ var BartanaLeftNav = (function (_React$Component) {
             text: 'Mixers'
         }];
     }
-
-    _inherits(BartanaLeftNav, _React$Component);
 
     _createClass(BartanaLeftNav, [{
         key: 'render',
@@ -50983,6 +50987,8 @@ var StyleMixer = require('../tools/style_mixer.jsx');
 var Paper = Mui.Paper;
 
 var Drink = (function (_React$Component) {
+    _inherits(Drink, _React$Component);
+
     function Drink() {
         _classCallCheck(this, Drink);
 
@@ -51021,8 +51027,6 @@ var Drink = (function (_React$Component) {
             })
         };
     }
-
-    _inherits(Drink, _React$Component);
 
     _createClass(Drink, [{
         key: '_getColor',
@@ -51123,6 +51127,8 @@ var Dialog = Mui.Dialog;
 var RaisedButton = Mui.RaisedButton;
 
 var DrinkDialog = (function (_React$Component) {
+    _inherits(DrinkDialog, _React$Component);
+
     function DrinkDialog(props) {
         _classCallCheck(this, DrinkDialog);
 
@@ -51188,8 +51194,6 @@ var DrinkDialog = (function (_React$Component) {
             }
         };
     }
-
-    _inherits(DrinkDialog, _React$Component);
 
     _createClass(DrinkDialog, [{
         key: '_getSortedComponents',
@@ -51434,6 +51438,8 @@ var Styles = Mui.Styles;
 var Typography = Styles.Typography;
 
 var Drinks = (function (_React$Component) {
+    _inherits(Drinks, _React$Component);
+
     function Drinks() {
         _classCallCheck(this, Drinks);
 
@@ -51453,8 +51459,6 @@ var Drinks = (function (_React$Component) {
             })
         };
     }
-
-    _inherits(Drinks, _React$Component);
 
     _createClass(Drinks, [{
         key: 'componentDidMount',
@@ -51510,6 +51514,8 @@ var Config = require('../../json/config.json');
 var GlassType = require('../enums/glass_type.jsx');
 
 var GlassSvg = (function (_React$Component) {
+    _inherits(GlassSvg, _React$Component);
+
     function GlassSvg(props) {
         _classCallCheck(this, GlassSvg);
 
@@ -51526,8 +51532,6 @@ var GlassSvg = (function (_React$Component) {
 
         this.sortedComponents = this._getSortedComponents();
     }
-
-    _inherits(GlassSvg, _React$Component);
 
     _createClass(GlassSvg, [{
         key: 'render',
@@ -51787,6 +51791,8 @@ var Styles = Mui.Styles;
 var ThemeManager = new Styles.ThemeManager();
 
 var Master = (function (_React$Component) {
+    _inherits(Master, _React$Component);
+
     function Master() {
         _classCallCheck(this, Master);
 
@@ -51796,8 +51802,6 @@ var Master = (function (_React$Component) {
 
         this._onLeftIconButtonTouchTap = this._onLeftIconButtonTouchTap.bind(this);
     }
-
-    _inherits(Master, _React$Component);
 
     _createClass(Master, [{
         key: 'getChildContext',
@@ -51863,6 +51867,8 @@ var React = require('react');
 var Paper = Mui.Paper;
 
 var Mixer = (function (_React$Component) {
+    _inherits(Mixer, _React$Component);
+
     function Mixer() {
         _classCallCheck(this, Mixer);
 
@@ -51878,8 +51884,6 @@ var Mixer = (function (_React$Component) {
             }
         };
     }
-
-    _inherits(Mixer, _React$Component);
 
     _createClass(Mixer, [{
         key: 'render',
@@ -51922,6 +51926,8 @@ var React = require('react');
 var Mixer = require('./mixer.jsx');
 
 var Mixers = (function (_React$Component) {
+    _inherits(Mixers, _React$Component);
+
     function Mixers() {
         _classCallCheck(this, Mixers);
 
@@ -51932,8 +51938,6 @@ var Mixers = (function (_React$Component) {
             }
         };
     }
-
-    _inherits(Mixers, _React$Component);
 
     _createClass(Mixers, [{
         key: 'render',
