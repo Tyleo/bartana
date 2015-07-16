@@ -3,6 +3,8 @@
 
 # Project-specific files
 src/bartana/public/javascripts/client.js
+src/bartana/public/stylesheets/style.css
+src/bartana/private/data/bar.sqlite
 
 # User-specific files
 *.suo
