@@ -84,8 +84,8 @@ class GlassSvg extends React.Component {
     _createLiquids() {
         let liquids = [];
         let previousTop = 0;
-        for (let i = 0; i < this.sortedComponents.length; i++) {
-            let component = this.sortedComponents[i];
+        for (let i = this.props.components.length - 1; i >= 0; i--) {
+            let component = this.props.components[i];
             let liquidData = this._createLiquid(component, previousTop);
             liquids.push(liquidData.result);
             previousTop = liquidData.top;
